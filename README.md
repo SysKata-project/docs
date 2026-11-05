@@ -38,7 +38,7 @@ See the [product specification](https://github.com/SysKata-project/app/blob/main
 
 ## Decisions still open
 
-The learner application will use Flutter and Dart for iOS and Android. The MVP baseline uses PostgreSQL, a modular API and versioned content bundles. The initial journey is OpenShift aligned to DO180/DO280. Backend framework, hosting, authentication, lab isolation implementation and verified runtime compatibility remain open. Record significant decisions with their context and tradeoffs here.
+The learner application will use Flutter and Dart for iOS and Android. The MVP baseline uses PostgreSQL, a modular Java/Quarkus API, self-hosted Keycloak and versioned content bundles. Development starts locally; hosted deployment is deferred. The initial journey is OpenShift aligned to DO180/DO280. Hosted operations, lab isolation implementation and verified runtime compatibility remain open. See [ADR 0001](decisions/0001-backend-and-identity.md) for accepted choices and remaining decisions.
 
 ## Contributing
 
@@ -46,6 +46,10 @@ Open an issue describing the learner need, proposed behavior, and affected compo
 
 ## Implementation design
 
+- [Runtime and identity decisions](decisions/0001-backend-and-identity.md)
+- [Learning policy](decisions/0002-learning-policy.md)
+- [Data lifecycle and operations](decisions/0003-data-lifecycle-and-operations.md)
+- [Credential-free local configuration example](configuration/.env.example)
 - [Learning architecture](architecture/learning-platform.md)
 - [OpenShift MVP plan](plans/openshift-mvp.md)
 - [Cross-repository issue backlog](plans/mvp-backlog.md)

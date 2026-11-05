@@ -4,7 +4,7 @@ Status: MVP implementation baseline, documented 2026-11-04. Services and contrac
 
 ## Decision and ownership
 
-Use a modular application API, PostgreSQL for durable learner state, versioned YAML/Markdown content compiled to JSON, and a separate lab execution boundary. The first journey is OpenShift, aligned to public DO180 and DO280 objectives. Flutter serves iOS and Android. Backend language, identity provider, hosting, and lab provider remain implementation decisions.
+Use a modular application API, PostgreSQL for durable learner state, versioned YAML/Markdown content compiled to JSON, and a separate lab execution boundary. The first journey is OpenShift, aligned to public DO180 and DO280 objectives. Flutter serves iOS and Android. [ADR 0001](../decisions/0001-backend-and-identity.md) selects Java/Quarkus and self-hosted Keycloak, operated by SysKata, with local development first. Hosted deployment is deferred; lab provider and runtime feasibility remain separate decisions.
 
 | Repository | Responsibility |
 | --- | --- |
