@@ -32,7 +32,7 @@ The proposed flow is: a learner selects a lesson in the web app; the API tracks 
 
 ## Decisions still open
 
-Technology stack, hosting, authentication, content distribution, lab isolation, supported certification versions, and licensing have not been selected. Record significant decisions with their context and tradeoffs here.
+Technology stack, hosting, authentication, content distribution, lab isolation, supported certification versions have not been selected. Record significant decisions with their context and tradeoffs here.
 
 ## Contributing
 
@@ -40,4 +40,10 @@ Open an issue describing the learner need, proposed behavior, and affected compo
 
 ## Status
 
-Planning scaffold only. This README describes intended behavior, not implemented capabilities. No license has been selected yet.
+Planning scaffold only. This README describes intended behavior, not implemented capabilities.
+
+## License
+
+Copyright 2026 SysKata contributors.
+
+This repository, including its code, documentation, and learning content, is licensed under the [Apache License 2.0](LICENSE).
