@@ -20,7 +20,7 @@ SysKata helps learners build a daily technical practice habit through short less
 | [content](https://github.com/SysKata-project/content) | Authored learning paths, lessons, exercises, and assessment criteria |
 | [.github](https://github.com/SysKata-project/.github) | Public organization profile |
 
-The proposed flow is: a learner selects a lesson in the Flutter app; the API tracks the session and requests an isolated environment from the lab service; lab assessments produce results; the API records progress and returns feedback. Versioned content supplies the learning material and assessment criteria. Contracts are to be designed before integration.
+The proposed flow is: a learner selects a lesson in the Flutter app; the API tracks the session, grades knowledge exercises, and requests an isolated environment from the lab service only for hands-on tasks; lab assessments produce results; the API records progress and returns feedback. Versioned content supplies the learning material and assessment criteria. Contracts are to be designed before integration.
 
 ## Mobile application
 
@@ -30,7 +30,7 @@ See the [product specification](https://github.com/SysKata-project/app/blob/main
 
 ## Proposed first milestone
 
-1. Select one certification path and a small set of learning objectives.
+1. Deliver the OpenShift pilot slice aligned to DO180 and DO280 public objectives.
 2. Define the content format and author an original lesson with a practical challenge.
 3. Provision a disposable lab and assess observable task outcomes.
 4. Deliver a complete learner flow with explanatory feedback and saved progress.
@@ -38,11 +38,17 @@ See the [product specification](https://github.com/SysKata-project/app/blob/main
 
 ## Decisions still open
 
-The learner application will use Flutter and Dart for iOS and Android. Backend technology, hosting, authentication, content distribution, lab isolation, and supported certification versions remain open. Record significant decisions with their context and tradeoffs here.
+The learner application will use Flutter and Dart for iOS and Android. The MVP baseline uses PostgreSQL, a modular API and versioned content bundles. The initial journey is OpenShift aligned to DO180/DO280. Backend framework, hosting, authentication, lab isolation implementation and verified runtime compatibility remain open. Record significant decisions with their context and tradeoffs here.
 
 ## Contributing
 
 Open an issue describing the learner need, proposed behavior, and affected components. Keep cross-component contracts and product decisions here; keep implementation documentation with the owning component. Avoid committing secrets or learner data.
+
+## Implementation design
+
+- [Learning architecture](architecture/learning-platform.md)
+- [OpenShift MVP plan](plans/openshift-mvp.md)
+- [Cross-repository issue backlog](plans/mvp-backlog.md)
 
 ## Status
 
