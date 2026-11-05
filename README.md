@@ -14,13 +14,19 @@ SysKata helps learners build a daily technical practice habit through short less
 
 | Repository | Owns |
 | --- | --- |
-| [web](https://github.com/SysKata-project/web) | Learner-facing interface and interaction design |
+| [app](https://github.com/SysKata-project/app) | Flutter application for iOS and Android; learner interface and interaction design |
 | [api](https://github.com/SysKata-project/api) | Application state, progression, sessions, and review scheduling |
 | [labs](https://github.com/SysKata-project/labs) | Practice environment lifecycle and assessment execution |
 | [content](https://github.com/SysKata-project/content) | Authored learning paths, lessons, exercises, and assessment criteria |
 | [.github](https://github.com/SysKata-project/.github) | Public organization profile |
 
-The proposed flow is: a learner selects a lesson in the web app; the API tracks the session and requests an isolated environment from the lab service; lab assessments produce results; the API records progress and returns feedback. Versioned content supplies the learning material and assessment criteria. Contracts are to be designed before integration.
+The proposed flow is: a learner selects a lesson in the Flutter app; the API tracks the session and requests an isolated environment from the lab service; lab assessments produce results; the API records progress and returns feedback. Versioned content supplies the learning material and assessment criteria. Contracts are to be designed before integration.
+
+## Mobile application
+
+The [app repository](https://github.com/SysKata-project/app) owns a shared Flutter/Dart application for iOS and Android. Its planned experience combines short daily lessons, a visible learning path, immediate feedback, targeted review, daily goals, streaks, and achievement milestones with Kata as the practice companion. Hands-on Linux tasks execute in remote labs accessed through the app.
+
+See the [product specification](https://github.com/SysKata-project/app/blob/main/docs/product.md), [architecture](https://github.com/SysKata-project/app/blob/main/docs/architecture.md), and [implementation roadmap](https://github.com/SysKata-project/app/blob/main/docs/roadmap.md). These documents describe planned behavior; no runnable mobile app is available yet.
 
 ## Proposed first milestone
 
@@ -32,7 +38,7 @@ The proposed flow is: a learner selects a lesson in the web app; the API tracks 
 
 ## Decisions still open
 
-Technology stack, hosting, authentication, content distribution, lab isolation, supported certification versions have not been selected. Record significant decisions with their context and tradeoffs here.
+The learner application will use Flutter and Dart for iOS and Android. Backend technology, hosting, authentication, content distribution, lab isolation, and supported certification versions remain open. Record significant decisions with their context and tradeoffs here.
 
 ## Contributing
 
